@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ilari's Portfolio - Flame Propagation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Portfolio</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Portfolio</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Project<br />
+									Flame Propagation</h1>
+									<p>//Real-time simulation of flame propagation on voxelized 3D-geometry using Unity.</p>
+								</header>
+								<a href="resources/FlamePropDemo.zip" target="_blank" class="image main"><img src="images/flameprop/FlamePropDemo.png" alt="" /></a>
+								<p>Inspired by the flame propagation mechanic found in the Far Cry -series, 
+                                    I decided to explore flame simulation in real-time computer graphics. Having familiarized myself with the Unity game engine, this was the choice platform 
+									to build the simulation platform.</p>
+
+								<p>By utilizing voxelization, I was able to create volumetric representation of any given 3D-object. In this particular simulation, voxels served as a method 
+									of mapping a ‘terrain’ for the flame to propagate. Sub-sectioning a mesh into voxel data is fast, and easily runs in real-time.</p>    
+
+								<p>This project served as an excellent introduction to the realm of advanced computer simulations. </p>				
+
+								<p>My mesh voxelization implementation extends Nihilist Dev’s blog post found <a href="http://nihilistdev.blogspot.com/2012/08/voxelization-in-unity.html">here</a>.</p>
+								<p>I was able to utilize this implementation for my simulation, by making a few minor optimizations as well as some changes to the voxel logic. </p>
+
+								<p>The project was written in the now depricated Unity Script.</p>
+
+								<h3>Changes to Nihilist Dev’s implementation:</h3>
+								<ul>
+									<li>Voxel data structure modifications to appropriately calculate flame propagation.</li>
+									<li>Minor addition of ‘voxel intelligence’ in order to determine the probability whether a voxelized surface area of a mesh should ignite or not. </li>
+									<li>Culling voxels within the mesh. This optimization was appropriate in the given scope, since there was no need to simulate flame propagation other than on the surface of the mesh.</li>								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<section class="split contact">
+						<section>
+							<h3>Phone</h3>
+							<p><a href="tel:+358458959789">(+358) 045 895 9789</a></p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href = "mailto: ilari.saarenpaa@gmail.com">ilari.saarenpaa@gmail.com</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://www.linkedin.com/in/ilari-saarenpaa/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/ThatFinnishGuy" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; thatfinnishguy</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
